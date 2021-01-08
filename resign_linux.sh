@@ -187,14 +187,14 @@ function ps3xploit_resign() {
     fi;
 
     # Check if python-dev is installed
-    python_headers=$(dpkg-query -l python-dev >/dev/null 2>&1; echo "${?}");
-    if [ "${python_headers}" -ne 0 ]; then
-      echo;
-      echo "ps3xploit_ps3py_all: 'python-dev' not is installed, exiting...";
-      echo "                     To continue install 'python-dev'";
-      echo;
-      return;
-    fi;
+    #python_headers=$(dpkg-query -l python-dev >/dev/null 2>&1; echo "${?}");
+    #if [ "${python_headers}" -ne 0 ]; then
+    #  echo;
+    #  echo "ps3xploit_ps3py_all: 'python-dev' not is installed, exiting...";
+    #  echo "                     To continue install 'python-dev'";
+    #  echo;
+    #  return;
+    #fi;
 
     # Message output
     echo;
